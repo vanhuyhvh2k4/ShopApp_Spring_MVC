@@ -100,11 +100,11 @@
     <div class="container">
         <div class="row">
             <p class="text-center fs-4 mt-5 mb-5">Category</p>
-            <div class="col-md-2" th:each="category: ${latestSixActiveCategory}">
+            <div class="col-md-2" th:each="category: ${categories}">
                 <div class="card rounded-circle shadow-sm p-3 mb-5 bg-white rounded">
                     <div class="card-body text-center">
-                        <img alt="" th:src="@{'/img/category/'+${category.categoryImage}}" width="100%" height="130px">
-                        <p><b>[[${category.categoryName}]]</b></p>
+                        <img alt="" th:src="@{'/img/category/'+${category.image}}" width="100%" height="130px">
+                        <p><b>[[${category.name}]]</b></p>
                     </div>
                 </div>
 

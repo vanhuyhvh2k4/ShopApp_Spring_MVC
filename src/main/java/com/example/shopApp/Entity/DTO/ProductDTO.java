@@ -1,8 +1,6 @@
 package com.example.shopApp.Entity.DTO;
 
 import com.example.shopApp.Entity.Enum.ProductStatus;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
 
 public class ProductDTO {
     private Long id;
@@ -15,7 +13,6 @@ public class ProductDTO {
 
     private Double cost;
 
-    @Enumerated(EnumType.STRING)
     private ProductStatus productStatus;
 
     public Long getId() {
