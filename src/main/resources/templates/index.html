@@ -232,12 +232,12 @@
 
         <div class="row">
 
-            <div class="col-md-3" th:each="product: ${latestEightActiveProducts}">
+            <div class="col-md-3" th:each="product: ${products}">
                 <div class="card shadow-sm p-3 mb-5 bg-white rounded">
                     <div class="card-body text-center">
-                        <img alt="" th:src="@{'/img/product_image/'+${product.productImage}}" width="60%"
+                        <img alt="" th:src="@{'/img/product_image/'+${product.image}}" width="60%"
                              height="140px">
-                        <p class="text-center"><b>[[${product.productTitle}]]</b></p>
+                        <p class="text-center"><b>[[${product.name}]]</b></p>
                     </div>
                 </div>
             </div>
